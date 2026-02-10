@@ -110,12 +110,8 @@ Normal / Attack
 Attack Type
 
 📸 Screenshots
-Create a folder named screenshots and add your UI images.
-
-Example:
-
-![Home Page](screenshots/home.png)
-![Prediction Result](screenshots/result.png)
+screenshots/ids.png
+screenshots/ids1.png
 📈 Future Enhancements
 Upload CSV dataset
 
