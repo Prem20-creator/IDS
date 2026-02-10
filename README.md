@@ -7,8 +7,6 @@ It predicts whether incoming network traffic is **Normal** or an **Attack**, and
 
 The system uses trained ML models and provides a web interface for real-time prediction.
 
-This project demonstrates how Machine Learning can be applied in Cybersecurity.
-
 ---
 
 ## ✨ Features
@@ -47,6 +45,8 @@ project-folder/
 ├── templates/
 │ └── index.html
 ├── screenshots/
+│ ├── ids.png
+│ └── ids1.png
 ├── README.md
 └── venv/
 
@@ -55,7 +55,7 @@ project-folder/
 
 ## 📊 Dataset
 
-The models were trained using a network intrusion dataset inspired by **NSL-KDD / KDD Cup 99**, containing network traffic features such as:
+The models were trained using a dataset inspired by **NSL-KDD / KDD Cup 99**, containing network traffic features such as:
 
 - duration  
 - src_bytes  
@@ -68,8 +68,6 @@ The models were trained using a network intrusion dataset inspired by **NSL-KDD 
 - dst_host_count  
 - dst_host_srv_count  
 
-The dataset includes both normal traffic and multiple attack categories.
-
 ---
 
 ## 📈 Model Performance
@@ -77,7 +75,7 @@ The dataset includes both normal traffic and multiple attack categories.
 - Binary Classification Accuracy: ~95%  
 - Attack Type Classification Accuracy: ~90%  
 
-*(Accuracy may vary depending on dataset and preprocessing.)*
+*(Accuracy may vary depending on preprocessing and dataset.)*
 
 ---
 
@@ -99,9 +97,9 @@ Open browser:
 
 http://127.0.0.1:5000/
 ▶️ How to Use
-Enter network traffic feature values.
+Enter network traffic feature values
 
-Click Predict.
+Click Predict
 
 View results:
 
@@ -110,8 +108,9 @@ Normal / Attack
 Attack Type
 
 📸 Screenshots
-![IDS Home](screenshots/ids.png)
-![Prediction Result](screenshots/ids1.png)
+
+
+
 
 📈 Future Enhancements
 Upload CSV dataset
@@ -135,14 +134,11 @@ ML model deployment
 
 Feature scaling
 
-End-to-end project workflow
+End-to-end ML workflow
 
 👨‍💻 Author
 Prem Kumar Gupta
-B.Tech Computer Science & Engineering Student
+B.Tech Computer Science & Engineering
 
 📄 License
-This project is open-source and available under the MIT License.
-
-
----
+This project is open-source under the MIT License.
