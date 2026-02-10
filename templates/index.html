@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intrusion Detection System</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f7f9fc;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 450px;
+            background: #fff;
+            padding: 25px 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin: 40px auto;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            font-weight: 600;
+            color: #555;
+            margin-top: 10px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 15px;
+        }
+        button {
+            background: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        .result {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 18px;
+            color: #333;
+        }
+        .attack {
+            color: red;
+            font-weight: bold;
+        }
+        .normal {
+            color: green;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            color: #777;
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>🚨 Intrusion Detection System</h1>
+        <form action="/predict" method="POST">
+            <label>Duration:</label>
+            <input type="number" step="any" name="duration" required>
+
+            <label>Source Bytes:</label>
+            <input type="number" step="any" name="src_bytes" required>
+
+            <label>Destination Bytes:</label>
+            <input type="number" step="any" name="dst_bytes" required>
+
+            <label>Count:</label>
+            <input type="number" step="any" name="count" required>
+
+            <label>Service Count (srv_count):</label>
+            <input type="number" step="any" name="srv_count" required>
+
+            <label>Serror Rate:</label>
+            <input type="number" step="any" name="serror_rate" required>
+
+            <label>Same Service Rate:</label>
+            <input type="number" step="any" name="same_srv_rate" required>
+
+            <label>Different Service Rate:</label>
+            <input type="number" step="any" name="diff_srv_rate" required>
+
+            <label>Destination Host Count:</label>
+            <input type="number" step="any" name="dst_host_count" required>
+
+            <label>Destination Host Service Count:</label>
+            <input type="number" step="any" name="dst_host_srv_count" required>
+
+            <button type="submit">Predict</button>
+        </form>
+
+        {% if prediction_text %}
+        <div class="result">
+            <p class="{{ 'attack' if 'Attack' in prediction_text else 'normal' }}">
+                {{ prediction_text }}
+            </p>
+            <p><strong>{{ attack_text }}</strong></p>
+        </div>
+        {% endif %}
+    </div>
+
+    <footer>
+        <p>Developed with ❤️ for Cybersecurity IDS Project</p>
+    </footer>
+
+</body>
+</html>
