@@ -110,8 +110,9 @@ Normal / Attack
 Attack Type
 
 📸 Screenshots
-screenshots/ids.png
-screenshots/ids1.png
+![IDS Home](screenshots/ids.png)
+![Prediction Result](screenshots/ids1.png)
+
 📈 Future Enhancements
 Upload CSV dataset
 
