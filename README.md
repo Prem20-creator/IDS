@@ -36,6 +36,7 @@ The system uses trained ML models and provides a web interface for real-time pre
 
 ## 📂 Project Structure
 
+```bash
 project-folder/
 │
 ├── app.py
@@ -49,7 +50,7 @@ project-folder/
 │ └── ids1.png
 ├── README.md
 └── venv/
-
+```
 
 ---
 
@@ -116,7 +117,7 @@ http://127.0.0.1:5000/
 ### 📸 Screenshots
 ![IDS Home](screenshots/ids.png)
 ![Prediction Result](screenshots/ids1.png)
----
+
 ### 📈 Future Enhancements
 - Upload CSV dataset
 - Improve UI
@@ -132,9 +133,9 @@ http://127.0.0.1:5000/
 - Feature scaling
 - End-to-end ML workflow
 ---
-### 👨‍💻 Author
-Prem Kumar Gupta
+## 👨‍💻 Author
+**Prem Kumar Gupta**
 B.Tech Computer Science & Engineering
----
+
 ### 📄 License
 This project is open-source under the MIT License.
