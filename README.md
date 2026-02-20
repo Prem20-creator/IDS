@@ -86,20 +86,20 @@ The models were trained using a dataset inspired by **NSL-KDD / KDD Cup 99**, co
 ```bash
 git clone <your-repository-url>
 cd project-folder
-
+---
 2️⃣ Create Virtual Environment
 python -m venv venv
 venv\Scripts\activate
-
+---
 3️⃣ Install Dependencies
 pip install flask numpy pandas scikit-learn joblib
-
+---
 4️⃣ Run Application
 python app.py
-
+---
 Open browser:
 http://127.0.0.1:5000/
-
+---
 ▶️ How to Use
 
 -  Enter network traffic feature values
@@ -107,11 +107,11 @@ http://127.0.0.1:5000/
 - View results:
   - Normal / Attack
   - Attack Type
-
+---
 📸 Screenshots
 ![IDS Home](screenshots/ids.png)
 ![Prediction Result](screenshots/ids1.png)
-
+---
 
 📈 Future Enhancements
 - Upload CSV dataset
@@ -120,17 +120,17 @@ http://127.0.0.1:5000/
 - Cloud deployment
 - Dashboard visualization
 - Real-time packet capture
-
+---
 🎯 Learning Outcomes
 - Machine Learning in Cybersecurity
 - Flask application development
 - ML model deployment
 - Feature scaling
 - End-to-end ML workflow
-
+---
 👨‍💻 Author
 Prem Kumar Gupta
 B.Tech Computer Science & Engineering
-
+---
 📄 License
 This project is open-source under the MIT License.
