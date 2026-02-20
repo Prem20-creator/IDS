@@ -135,7 +135,6 @@ http://127.0.0.1:5000/
 ---
 ## 👨‍💻 Author
 **Prem Kumar Gupta**
-B.Tech Computer Science & Engineering.
 
 ### 📄 License
 This project is open-source under the MIT License.
