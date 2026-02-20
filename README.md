@@ -86,17 +86,20 @@ The models were trained using a dataset inspired by **NSL-KDD / KDD Cup 99**, co
 ```bash
 git clone <your-repository-url>
 cd project-folder
----
-2️⃣ Create Virtual Environment
+```
+### 2️⃣ Create Virtual Environment
+```bash
 python -m venv venv
 venv\Scripts\activate
----
-3️⃣ Install Dependencies
+```
+### 3️⃣ Install Dependencies\
+```bash
 pip install flask numpy pandas scikit-learn joblib
----
-4️⃣ Run Application
+```
+### 4️⃣ Run Application
+```bash
 python app.py
----
+```
 Open browser:
 http://127.0.0.1:5000/
 ---
