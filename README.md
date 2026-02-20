@@ -92,7 +92,7 @@ cd project-folder
 python -m venv venv
 venv\Scripts\activate
 ```
-### 3️⃣ Install Dependencies\
+### 3️⃣ Install Dependencies
 ```bash
 pip install flask numpy pandas scikit-learn joblib
 ```
@@ -100,23 +100,24 @@ pip install flask numpy pandas scikit-learn joblib
 ```bash
 python app.py
 ```
-Open browser:
+### Open browser:
+```bash
 http://127.0.0.1:5000/
----
-▶️ How to Use
+```
+
+### ▶️ How to Use
 
 -  Enter network traffic feature values
 - Click Predict
 - View results:
   - Normal / Attack
   - Attack Type
----
-📸 Screenshots
+
+### 📸 Screenshots
 ![IDS Home](screenshots/ids.png)
 ![Prediction Result](screenshots/ids1.png)
 ---
-
-📈 Future Enhancements
+### 📈 Future Enhancements
 - Upload CSV dataset
 - Improve UI
 - Authentication
@@ -124,16 +125,16 @@ http://127.0.0.1:5000/
 - Dashboard visualization
 - Real-time packet capture
 ---
-🎯 Learning Outcomes
+### 🎯 Learning Outcomes
 - Machine Learning in Cybersecurity
 - Flask application development
 - ML model deployment
 - Feature scaling
 - End-to-end ML workflow
 ---
-👨‍💻 Author
+### 👨‍💻 Author
 Prem Kumar Gupta
 B.Tech Computer Science & Engineering
 ---
-📄 License
+### 📄 License
 This project is open-source under the MIT License.
