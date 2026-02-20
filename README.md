@@ -85,7 +85,7 @@ The models were trained using a dataset inspired by **NSL-KDD / KDD Cup 99**, co
 ### 1️⃣ Clone Repository
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/Prem20-creator/IDS.git
 cd project-folder
 ```
 ### 2️⃣ Create Virtual Environment
@@ -135,7 +135,7 @@ http://127.0.0.1:5000/
 ---
 ## 👨‍💻 Author
 **Prem Kumar Gupta**
-B.Tech Computer Science & Engineering
+B.Tech Computer Science & Engineering.
 
 ### 📄 License
 This project is open-source under the MIT License.
